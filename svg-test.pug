@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    h1 Pug - node template engine
+    #container.col
+      if youAreUsingPug
+        p You are amazing
+      else
+        p Get on it!
+      p.
+        Pug is a terse and simple templating language with a
+        strong focus on performance and powerful features.
+      svg(width=diameter height=diameter)
+        circle(cx="50%" cy="50%" r="25%" stroke=failedColor fill="none" stroke-width="50%" stroke-dasharray=failed)
+        circle(cx="50%" cy="50%" r="25%" stroke=passedColor fill="none" stroke-width="50%" stroke-dasharray=passed)
+        circle(cx="50%" cy="50%" r="25%" stroke=skippedColor fill="none" stroke-width="50%" stroke-dasharray=skipped)
